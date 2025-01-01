@@ -14,7 +14,12 @@ Create class `Car`, its `__init__` method takes and stores 3 arguments:
 
 
 class Car:
-    def __init__(self, comfort_class: int, clean_mark: int, brand: str):
+    def __init__(
+        self,
+        comfort_class: int,
+        clean_mark: int,
+        brand: str
+    ) -> None:
         self.brand = brand
         self.comfort_class = comfort_class
         self.clean_mark = clean_mark
@@ -24,7 +29,7 @@ class Car:
 Create class `CarWashStation`, its `__init__` method takes and stores 4
 arguments:
 
-    1. `distance_from_city_center` - how far station 
+    1. `distance_from_city_center` - how far station
         from the city center, from 1.0 to 10.0
     2. `clean_power` - `clean_mark` to which this car wash station washes (yes,
         not all stations can clean your car completely)
@@ -41,7 +46,7 @@ class CarWashStation:
         clean_power: int,
         average_rating: float,
         count_of_ratings: int,
-    ):
+    ) -> None:
         self.distance_from_city_center = distance_from_city_center
         self.clean_power = clean_power
         self.average_rating = average_rating
